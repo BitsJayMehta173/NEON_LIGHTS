@@ -13,9 +13,14 @@ a{
     padding: 30px 60px;
     border-radius: 20px;
     background-color: rgba(37, 11, 59, 0.63);
-    text-shadow: 0 0 0.6em rgb(238, 11, 189);
+    text-shadow: 0 0 0.7em rgba(202, 200, 200, 0.959);
+    box-shadow: 20px 20px 50px rgb(155, 18, 93);
+     animation: mymove 3s infinite;
 }
 
-a:hover{
-    text-shadow: 0 0 0.1em rgb(238, 11, 189);
-}
+@keyframes mymove{
+        
+        50%{text-shadow: 0 0 0.6em rgb(241, 11, 192);
+        box-shadow: 10px 10px 20px rgb(177, 3, 123));}
+        
+    }
