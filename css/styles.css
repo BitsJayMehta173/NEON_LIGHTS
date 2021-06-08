@@ -3,24 +3,47 @@ body{
     display: grid;
     place-items: center;
     background-color: rgb(22, 5, 37);
+    font-family: "Indie-Flower" ;
 }
 a{
-    font-size: 65px;
+    font-size: 80px;
     text-decoration: none;
     cursor: pointer;
-    color: rgb(238, 11, 189);
+    color: rgba(255, 255, 255, 0.747);
     border: 8px solid rgb(228, 7, 180);
     padding: 30px 60px;
     border-radius: 20px;
-    background-color: rgba(37, 11, 59, 0.63);
-    text-shadow: 0 0 0.7em rgba(202, 200, 200, 0.959);
-    box-shadow: 20px 20px 50px rgb(155, 18, 93);
-     animation: mymove 3s infinite;
+    background-color: rgba(36, 1, 56, 0.63);
+    text-shadow: 0 0 0.2em rgba(255, 255, 255, 0.959);
+    box-shadow:0 0 0.3em 0.01em rgba(226, 0, 154, 0.247);
+    animation: mymove 3s infinite;
 }
 
 @keyframes mymove{
-        
-        50%{text-shadow: 0 0 0.6em rgb(241, 11, 192);
-        box-shadow: 10px 10px 20px rgb(177, 3, 123));}
-        
+        50%{text-shadow: 0 0 0.6em rgb(255, 176, 238);
+        box-shadow: 0 0 1em 0.01em rgb(187, 27, 136);
+        border: 8px solid rgb(255, 238, 251);
     }
+    }
+
+.bar{
+    position: relative;
+    height: 10px;
+    width: 40%;
+    background-color: rgba(226, 0, 154, 0.247);
+    box-shadow:0 0 0.7em 0.01em rgba(226, 0, 154, 0.856);
+}
+.progress{
+    position: absolute;
+    height: 8px;
+    width: 0%;
+    background-color: rgba(236, 153, 218, 0.815) ;
+    border: 1px solid rgb(236, 153, 218);
+    border-radius: 20px;
+    box-shadow:0 0 0.7em 0.1em rgba(226, 0, 154, 0.856);
+    animation: probar 3s infinite;
+}
+
+@keyframes probar{
+    100%{width:100%;}
+}
