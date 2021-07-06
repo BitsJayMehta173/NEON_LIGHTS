@@ -5,13 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>MALIBU</title>
 </head>
 <body onload="loaded()">
-    <div id="loader">
-    <a href="#">MALIBU</a>
-    <span class="bar"><span class="progress"></span></span>
+
+    <div id="loader" class="preloader">
+
+        <a href="#">MALIBU</a>
+        <span class="bar"><span class="progress"></span></span>
+
+    </div>
+
+    <div class="afterload">
+
+            <div class="leftmenu">
+                <div class="boxcontain">
+                    <div class="logo">MALIBU</div>
+                    <ul class="lmenu-items">
+                        <li><a href="/index.html"><button>&#x2616; Home</button></a></li>
+                        <li><a href="#"><button>&#x2655; Account</button></a></li>
+                        <li><a href="#"><button>&#x267A; Shuffle</button></a></li>
+                        <li><a href="#"><button>&#x266A; My Library</button></a></li>
+                        <li><a href="#"><button>&#x2699; Settings</button></a></li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="rightmenu">
+                <div class="searchbox">
+                    <input class="search" type="text" placeholder="&#x266A; Search Out the Jam ">
+                    <div class="recplaybox">
+                        <p class="reclet">Recent Plays</p>
+                        <div class="recent-plays">
+                        <div class="box1 recentbox"></div>
+                        <div class="box2 recentbox"></div>
+                        <div class="box3 recentbox"></div>
+                    </div></div>
+                </div>
+            </div>
     </div>
     <script src="script.js"></script>
 </body>
