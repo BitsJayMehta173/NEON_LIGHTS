@@ -1,9 +1,14 @@
 body{
+    margin:0px;
+    padding: 0px;
+    background-color: rgb(22, 5, 37);
+}
+#loader{
     min-height: 100vh;
     display: grid;
     place-items: center;
     background-color: rgb(22, 5, 37);
-    font-family: "Indie-Flower" ;
+    z-index: 9999;
 }
 a{
     font-size: 80px;
@@ -41,7 +46,7 @@ a{
     border: 1px solid rgb(236, 153, 218);
     border-radius: 20px;
     box-shadow:0 0 0.7em 0.1em rgba(226, 0, 154, 0.856);
-    animation: probar 3s infinite;
+    animation: probar 3s infinite alternate;
 }
 
 @keyframes probar{
