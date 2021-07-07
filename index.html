@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>MALIBU</title>
 </head>
 <body onload="loaded()">
@@ -30,22 +29,39 @@
                         <li><a href="#"><button>&#x2699; Settings</button></a></li>
                     </ul>
                 </div>
-                
             </div>
-
-            <div class="rightmenu">
-                <div class="searchbox">
-                    <input class="search" type="text" placeholder="&#x266A; Search Out the Jam ">
-                    <div class="recplaybox">
-                        <p class="reclet">Recent Plays</p>
-                        <div class="recent-plays">
-                        <div class="box1 recentbox"></div>
-                        <div class="box2 recentbox"></div>
-                        <div class="box3 recentbox"></div>
-                    </div></div>
+            <div class="content">
+                <div class="search">
+                    <input type="text" class="searchbar" placeholder="&#x266A; Search Out the Jam">
+                </div>
+                <div class="plays">
+                    <div class="recentplays">
+                        <p class="playnames">Recent Plays</p>
+                        <div class="recentbox">
+                            <div class="playbox box1">
+                                <button class="playbtn" id="btnplay" onclick="songplay()">Play</button>
+                            </div>
+                            <audio id="song1">
+                                <source src="media/The Night We Met.mp3" type="audio/mp3">
+                            </audio>
+                            <div class="playbox box2"></div>
+                            <div class="playbox box3"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="genres">
+                        <p class="playnames">Genres</p>
+                        <section class="genresbox">
+                            <div class="playbox box4"></div>
+                            <div class="playbox box5"></div>
+                            <div class="playbox box6"></div>
+                            <div class="playbox box4"></div>
+                        </section>
+                    </div>
                 </div>
             </div>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
